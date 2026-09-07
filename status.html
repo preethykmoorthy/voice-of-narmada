@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check Status · Voice of Narmada</title>
+  <meta name="description" content="Check the status of your anonymous Voice of Narmada submission.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="simple-page">
+
+    <a href="index.html" class="back">← Voice of Narmada</a>
+
+    <section class="card form-card">
+
+      <p class="eyebrow">VOICE OF NARMADA</p>
+
+      <h1>Check Your<br>Message Status</h1>
+
+      <p class="muted">
+        Enter the private reference code you received after submitting.
+      </p>
+
+      <form id="statusForm">
+
+        <label for="reference">Reference code</label>
+
+        <input
+          id="reference"
+          required
+          autocomplete="off"
+          placeholder="e.g. VON-7K2P9M"
+        >
+
+        <button
+          class="button full"
+          type="submit"
+        >
+          Check Status
+        </button>
+
+      </form>
+
+      <div
+        id="statusResult"
+        class="status-result"
+        aria-live="polite"
+      ></div>
+
+    </section>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="status.js"></script>
+
+</body>
+</html>

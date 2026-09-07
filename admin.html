@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin · Voice of Narmada</title>
+  <meta name="description" content="Admin dashboard for Voice of Narmada.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="simple-page">
+
+    <section class="card form-card">
+
+      <p class="eyebrow">VOICE OF NARMADA</p>
+
+      <h1>Admin Dashboard</h1>
+
+      <p class="muted">
+        Review submitted messages and update their status.
+      </p>
+
+      <form id="loginForm">
+
+        <label for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          autocomplete="email"
+          required
+        >
+
+        <label for="password">Password</label>
+        <input
+          id="password"
+          type="password"
+          autocomplete="current-password"
+          required
+        >
+
+        <button class="button full" type="submit">
+          Login
+        </button>
+
+        <p
+          id="loginMessage"
+          class="form-message"
+          role="status"
+        ></p>
+
+      </form>
+
+      <div id="dashboard" hidden>
+
+        <div class="admin-head">
+
+          <div>
+            <p class="eyebrow">ADMIN</p>
+            <h2>Messages</h2>
+          </div>
+
+          <button
+            id="logoutBtn"
+            class="button secondary"
+            type="button"
+          >
+            Logout
+          </button>
+
+        </div>
+
+        <div id="messages"></div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="admin.js"></script>
+
+</body>
+</html>
