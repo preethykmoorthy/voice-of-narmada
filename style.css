@@ -110,8 +110,36 @@ textarea { resize: vertical; }
 .status-select { width: auto; min-width: 150px; }
 .meta { color: var(--muted); font-size: .9rem; }
 
-footer { text-align:center; padding:30px; color:var(--muted); }
+/* Bottom footer */
+.site-footer {
+  width: 100%;
+  margin-top: 80px;
+  padding: 24px clamp(22px, 6vw, 90px);
+  background: var(--ink);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  font-weight: 700;
+}
 
+.site-footer > span {
+  color: white;
+}
+
+.guide-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.guide-link:hover {
+  opacity: .85;
+}
 @media (max-width: 720px) {
   body {
     font-size: 16px;
@@ -239,24 +267,69 @@ footer { text-align:center; padding:30px; color:var(--muted); }
   footer {
     padding: 25px 15px;
   }
-}
+  /* Floating help button */
+.help-button {
+  position: fixed;
+  top: 18px;
+  left: 18px;
+  z-index: 1000;
 
-.user-guide {
-  text-align: center;
-  margin: 35px auto 10px;
-  color: var(--muted);
-}
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
 
-.user-guide p {
-  margin-bottom: 8px;
-}
+  padding: 10px 16px;
+  border-radius: 30px;
 
-.guide-link {
-  color: var(--teal);
-  font-weight: 800;
+  background: #e4f5f3;
+  color: var(--ink);
+
+  border: 1px solid #c9e7e3;
   text-decoration: none;
+  font-weight: 800;
+
+  box-shadow: 0 5px 18px rgba(0,0,0,.08);
 }
 
-.guide-link:hover {
-  text-decoration: underline;
+.help-button:hover {
+  transform: translateY(-1px);
 }
+
+.help-icon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--ink);
+  color: white;
+
+  font-weight: 900;
+  font-size: .9rem;
+}
+    .help-button {
+    top: 12px;
+    left: 12px;
+    padding: 8px 12px;
+    font-size: .85rem;
+  }
+
+  .help-icon {
+    width: 23px;
+    height: 23px;
+  }
+
+  .site-footer {
+    margin-top: 55px;
+    padding: 20px 16px;
+    font-size: .9rem;
+  }
+
+  .guide-link {
+    font-size: .9rem;
+  }
+}
+
