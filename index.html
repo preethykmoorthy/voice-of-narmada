@@ -11,16 +11,15 @@
 <body>
 
   <!-- Help button -->
-  <a
-    href="https://drive.google.com/file/d/1UA3WcZxOkQW0yE8kdRasLr8nXP7V3VCM/view?usp=drivesdk"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="help-button"
-    aria-label="Open User Guide"
-  >
-    <span class="help-icon">?</span>
-    <span>Need help?</span>
-  </a>
+  <button
+  type="button"
+  class="help-button"
+  onclick="document.querySelector('.site-footer').scrollIntoView({ behavior: 'smooth' });"
+  aria-label="Go to help section"
+>
+  <span class="help-icon">?</span>
+  <span>Need help?</span>
+</button>
 
   <header class="hero">
     <nav>
