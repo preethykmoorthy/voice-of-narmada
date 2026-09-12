@@ -240,3 +240,23 @@ footer { text-align:center; padding:30px; color:var(--muted); }
     padding: 25px 15px;
   }
 }
+
+.user-guide {
+  text-align: center;
+  margin: 35px auto 10px;
+  color: var(--muted);
+}
+
+.user-guide p {
+  margin-bottom: 8px;
+}
+
+.guide-link {
+  color: var(--teal);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.guide-link:hover {
+  text-decoration: underline;
+}
