@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Voice of Narmada</title>
-  <meta name="description" content="An anonymous platform for Narmada Hostel residents to share concerns and suggestions.">
+  <meta
+    name="description"
+    content="An anonymous platform for Narmada Hostel residents to share concerns and suggestions."
+  >
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,23 +15,31 @@
 
   <!-- Help button -->
   <button
-  type="button"
-  class="help-button"
-  onclick="document.querySelector('.site-footer').scrollIntoView({ behavior: 'smooth' });"
-  aria-label="Go to help section"
->
-  <span class="help-icon">?</span>
-  <span>Need help?</span>
-</button>
+    type="button"
+    class="help-button"
+    onclick="document.querySelector('.site-footer').scrollIntoView({ behavior: 'smooth' });"
+    aria-label="Go to help section"
+  >
+    Need Help
+  </button>
 
+
+  <!-- Hero section -->
   <header class="hero">
+
     <nav>
       <div class="brand">VOICE OF NARMADA</div>
-      <a href="status.html" class="nav-link">Check Status</a>
+
+      <a href="status.html" class="nav-link">
+        Check Status
+      </a>
     </nav>
 
     <div class="hero-content">
-      <p class="eyebrow">NARMADA HOSTEL</p>
+
+      <p class="eyebrow">
+        NARMADA HOSTEL
+      </p>
 
       <h1>
         Your Voice.<br>
@@ -40,13 +51,21 @@
         Your message deserves to be heard.
       </p>
 
-      <a href="#report" class="button">Share Your Voice</a>
+      <a href="#report" class="button">
+        Share Your Voice
+      </a>
+
     </div>
+
   </header>
 
+
+  <!-- Main content -->
   <main>
 
+    <!-- Report form -->
     <section id="report" class="card form-card">
+
       <h2>Speak Freely</h2>
 
       <p class="muted">
@@ -55,20 +74,50 @@
 
       <form id="voiceForm">
 
-        <label for="category">Category</label>
+        <label for="category">
+          Category
+        </label>
 
         <select id="category" required>
-          <option value="">Choose one</option>
-          <option>Hostel Facilities</option>
-          <option>Food</option>
-          <option>Washing Area</option>
-          <option>Sports</option>
-          <option>Cleanliness</option>
-          <option>Safety</option>
-          <option>Other</option>
+
+          <option value="">
+            Choose one
+          </option>
+
+          <option>
+            Hostel Facilities
+          </option>
+
+          <option>
+            Food
+          </option>
+
+          <option>
+            Washing Area
+          </option>
+
+          <option>
+            Sports
+          </option>
+
+          <option>
+            Cleanliness
+          </option>
+
+          <option>
+            Safety
+          </option>
+
+          <option>
+            Other
+          </option>
+
         </select>
 
-        <label for="message">Your message</label>
+
+        <label for="message">
+          Your message
+        </label>
 
         <textarea
           id="message"
@@ -78,9 +127,11 @@
           placeholder="Tell us what happened, what you suggest, or what needs attention..."
         ></textarea>
 
+
         <div class="counter">
           <span id="count">0</span>/2000
         </div>
+
 
         <button
           class="button full"
@@ -90,6 +141,7 @@
           Submit Anonymously
         </button>
 
+
         <p
           id="formMessage"
           class="form-message"
@@ -97,40 +149,65 @@
         ></p>
 
       </form>
+
     </section>
 
+
+    <!-- Information cards -->
     <section class="info-grid">
 
       <div class="card">
-        <h3>Anonymous</h3>
+
+        <h3>
+          Anonymous
+        </h3>
+
         <p>
           No identity details are requested by this form.
         </p>
+
       </div>
 
+
       <div class="card">
-        <h3>Action</h3>
+
+        <h3>
+          Action
+        </h3>
+
         <p>
           Messages can be reviewed and followed up by the
           hostel representatives.
         </p>
+
       </div>
 
+
       <div class="card">
-        <h3>24/48 Hours</h3>
+
+        <h3>
+          24/48 Hours
+        </h3>
+
         <p>
           Our goal is to review concerns and begin appropriate
           action within 24–48 hours.
         </p>
+
       </div>
 
     </section>
 
   </main>
 
-  <!-- Footer -->
+
+  <!-- Footer / User Guide -->
   <footer class="site-footer">
-    <span>@Voice of Narmada</span>
+
+    <span>
+      @Voice of Narmada
+    </span>
+
 
     <a
       href="https://drive.google.com/file/d/1UA3WcZxOkQW0yE8kdRasLr8nXP7V3VCM/view?usp=drivesdk"
@@ -140,8 +217,11 @@
     >
       📖 View User Guide
     </a>
+
   </footer>
 
+
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="config.js"></script>
   <script src="app.js"></script>
